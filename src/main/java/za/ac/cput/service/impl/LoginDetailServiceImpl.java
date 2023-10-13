@@ -55,4 +55,8 @@ public abstract class LoginDetailServiceImpl implements LoginDetailService{
 
     }
 
+    public LoginDetail findByEmail(String email){
+        return null;
+    }
+
 }

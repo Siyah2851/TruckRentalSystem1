@@ -14,6 +14,9 @@ import za.ac.cput.service.impl.LoginDetailServiceImpl;
 import java.util.Set;
 
 
+@CrossOrigin("*")
+@RestController
+@RequestMapping("/LoginDetail")
 public class LoginDetailController {
     @Autowired
     LoginDetailServiceImpl loginDetailService;
@@ -35,10 +38,10 @@ public class LoginDetailController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public boolean delete(@PathVariable String id) {
-        loginDetailService.delete(id);
-        return true;
-    }
+//    public boolean delete(@PathVariable String id) {
+//        loginDetailService.delete(id);
+//        return true;
+//    }
 
     @GetMapping("/getAll")
     public Set<LoginDetail> getAll() {

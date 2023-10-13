@@ -20,6 +20,8 @@ DriverController.java
 @Author: Siyakha Manisi (219239657)
 09 September 2023
 * */
+
+@CrossOrigin("*")
 @RestController
 @RequestMapping ("/driver")
 public class DriverController {
@@ -44,10 +46,10 @@ public class DriverController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public boolean delete (@PathVariable String id){
-        driverService.delete(id);
-        return true;
-    }
+//    public boolean delete (@PathVariable String id){
+//        driverService.delete(id);
+//        return true;
+//    }
 
     @GetMapping("/getAll")
     public Set<Driver> getAll(){

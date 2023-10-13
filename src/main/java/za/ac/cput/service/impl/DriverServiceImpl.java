@@ -54,5 +54,9 @@ public class DriverServiceImpl implements DriverService {
 
     }
 
+    public Driver findByEmail(String email){
+        return null;
+    }
+
 
 }
